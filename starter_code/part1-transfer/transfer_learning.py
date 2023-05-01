@@ -73,7 +73,7 @@ model.classifier[6] = nn.Linear(num_ftrs, 3)
 # 3. optimizer 
 # 4. train_lr_scheduler 
 
-num_epochs = 10
+num_epochs = 5
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.SGD(model.parameters(), lr=0.001, momentum=0.9)
 train_lr_scheduler = lr_scheduler.StepLR(optimizer, step_size=7, gamma=0.1)
